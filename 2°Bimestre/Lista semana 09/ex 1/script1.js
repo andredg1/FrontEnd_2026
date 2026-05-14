@@ -7,7 +7,8 @@ function validarCPF() {
     cpf = cpf.replace(/\D/g, "");
 
     if (cpf.length != 11) {
-        alert("CPF inválido");
+        resultado.innerText = "CPF inválido";
+        resultado.style.color = "red";
         return;
     }
 
@@ -25,7 +26,8 @@ function validarCPF() {
     }
 
     if (resto != Number(cpf[9])) {
-        alert("CPF inválido");
+        resultado.innerText = "CPF inválido";
+        resultado.style.color = "red";
         return;
     }
     soma = 0;
@@ -41,9 +43,11 @@ function validarCPF() {
     }
 
     if (resto != Number(cpf[10])) {
-        alert("CPF inválido");
+        resultado.innerText = "CPF inválido";
+        resultado.style.color = "red";
         return;
     }
 
-    alert("CPF válido");
+    resultado.innerText = "CPF válido";
+    resultado.style.color = "green";
 }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Guard - Validador</title>
+
+    <style>
+
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 380px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 16px;
+            white-space: pre-line;
+        }
+
+        .verde {
+            color: green;
+            font-weight: bold;
+        }
+
+        .vermelho {
+            color: red;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+
+        <h1>Card Guard</h1>
+
+        <input type="text" id="cartao" placeholder="Digite o número do cartão">
+
+        <button id="btn">Analisar Cartão</button>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script src="script7.js"></script>
+
+</body>
+</html>

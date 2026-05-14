@@ -1,0 +1,71 @@
+<meta charset="UTF-8">
+    <title>Média Escolar</title>
+
+    <style>
+
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+
+        <h1>Média Escolar</h1>
+
+        <input type="text" id="nome" placeholder="Nome do aluno">
+
+        <input type="number" id="nota1" placeholder="Nota 1">
+
+        <input type="number" id="nota2" placeholder="Nota 2">
+
+        <input type="number" id="nota3" placeholder="Nota 3">
+
+        <button id="calcular">Calcular Média</button>
+
+        <p id="resultado"></p>
+
+    </div>
+
+    <script src="script3.js"></script>
+
+</body>
+</html>
